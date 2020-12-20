@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: lightgrey;
+    height: 150px;
+}
+
+img {
+    float: right;
+    border-radius: 20px;
+    height: 150px;
+}
+
+h1, h2, li {
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+@media only screen and (min-width: 39em){
+    header {
+    width: 600px;
+    }   
+    
+}
