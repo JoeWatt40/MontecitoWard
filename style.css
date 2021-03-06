@@ -2,12 +2,33 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-header {
+div {
+    display: grid;
+    grid-template-columns: 1fr;
     margin: 0 auto;
+}
+
+.card {
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header {
+    margin: auto;
+    margin-bottom: 20px;
     border: 2px solid black;
     border-radius: 20px;
     background-color: lightgrey;
     height: 150px;
+}
+
+header h1 {
+    vertical-align: middle;
+}
+
+div h2 {
+    margin: 0;
 }
 
 img {
@@ -25,9 +46,19 @@ ul {
     list-style: none;
 }
 
-@media only screen and (min-width: 39em){
-    header {
-    width: 600px;
+@media only screen and (min-width: 500px){
+    header, div {
+        width: 500px;
     }   
+
+    .card {
+        width: 225px;
+        margin: 0 auto;
+    }
+
+    div {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
     
 }
